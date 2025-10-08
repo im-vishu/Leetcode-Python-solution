@@ -1,128 +1,83 @@
-# LeetCode Python Solutions 🧠💻
+# 🧠 LeetCode Python Solutions
 
-A curated collection of **LeetCode problems solved in Python** — clean, tested, and easy to navigate.
-
-Each solution follows a consistent format with explanations, time and space complexity, and a test case. The goal is to make this repo a go‑to reference for Pythonic LeetCode solutions.
+A curated collection of **Python solutions to LeetCode problems**, organized for easy navigation and learning.
+Each problem includes a **short description**, **direct problem link**, and a **solution file** for quick access.
+Perfect for practicing, revising, and mastering coding interview questions efficiently.
 
 ---
 
-## 📁 Repository Structure
+## 🚀 Features
 
-```
-LeetCode-Python-Solutions/
-├── README.md                # Problem table and overview
-├── solutions/               # Python solution files
-│   ├── lc_1_two_sum.py
-│   ├── lc_2_add_two_numbers.py
-│   └── ...
-├── tests/                   # pytest test files
-│   ├── test_lc_1_two_sum.py
-│   └── ...
-├── tools/                   # helper scripts (auto-generate table)
-│   └── generate_readme_table.py
-└── requirements.txt
-```
+* ✅ **Organized by Problem ID & Difficulty**
+* 📝 **Concise problem descriptions** (1–3 lines)
+* 📂 **Individual Python solution files** for clarity
+* 🧪 **Optional pytest tests** to validate solutions
+* ⚙️ **Tools to auto-generate README table** from solution files
+* 🔗 **Clickable links** for each solution for easy access
 
 ---
 
 ## 📊 Problem Table
 
-| ID | Title           | Difficulty | Topics            | Solution                                                     | Status   |
-| -: | --------------- | ---------- | ----------------- | ------------------------------------------------------------ | -------- |
-|  1 | Two Sum         | Easy       | Array, Hash Table | [lc_1_two_sum.py](solutions/lc_1_two_sum.py)                 | ✅ Tested |
-|  2 | Add Two Numbers | Medium     | Linked List, Math | [lc_2_add_two_numbers.py](solutions/lc_2_add_two_numbers.py) | ✅ Tested |
+| # | Problem                                                                                                                         | Description                                                            | Solution                                                                            |
+| - | ------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/)                                                                               | Find two numbers in an array that sum to a target.                     | [View Solution](./solutions/0001_two_sum.py)                                        |
+| 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)                                                               | Add two numbers represented as linked lists and return the sum.        | [View Solution](./solutions/0002_add_two_numbers.py)                                |
+| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Find the length of the longest substring with no repeating characters. | [View Solution](./solutions/0003_longest_substring_without_repeating_characters.py) |
 
-*(Table auto‑updates using `tools/generate_readme_table.py`)*
+<!-- TABLE_START -->
+
+<!-- TABLE_END -->
 
 ---
 
-## 🧩 Example Solution Template
+## 📁 Folder Structure
 
-Each file should include the following structure:
-
-```python
-"""
-LeetCode 1. Two Sum
-https://leetcode.com/problems/two-sum/
-Difficulty: Easy
-Topics: Array, Hash Table
-
-Approach: Use a hash map to store complements for O(n) lookup.
-Time Complexity: O(n)
-Space Complexity: O(n)
-"""
-
-from typing import List
-
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        seen = {}
-        for i, num in enumerate(nums):
-            comp = target - num
-            if comp in seen:
-                return [seen[comp], i]
-            seen[num] = i
-
-if __name__ == "__main__":
-    print(Solution().twoSum([2,7,11,15], 9))  # [0, 1]
+```
+LeetCode-Python-Solutions/
+├── README.md
+├── solutions/    # Individual Python solution files
+├── tests/        # Optional pytest files
+├── tools/        # Helper scripts (e.g., auto-generate README table)
+└── requirements.txt
 ```
 
 ---
 
-## 🧪 Tests
+## ⚙️ How to Run a Solution
 
-Write simple, clean tests in `tests/` using **pytest**:
-
-```python
-from solutions.lc_1_two_sum import Solution
-
-def test_two_sum():
-    assert Solution().twoSum([2,7,11,15], 9) == [0,1]
+```bash
+python solutions/0001_two_sum.py
 ```
 
-Run all tests:
+---
+
+## 🧪 Running Tests (Optional)
 
 ```bash
 pytest -v
 ```
 
----
-
-## ⚙️ Tools
-
-The script `tools/generate_readme_table.py` scans all solution files and rebuilds the problem table automatically. It extracts metadata (problem ID, title, difficulty, topics) from the file header.
-
-```bash
-python tools/generate_readme_table.py
-```
+Each test file should be placed in `tests/` and named `test_<problem_id>_<problem_name>.py`.
 
 ---
 
-## 🧠 Contributing
+## 📝 Contributing
 
-1. Follow file naming convention: `lc_<id>_<title>.py`
-2. Add a clear docstring with metadata.
-3. Add a test file in `tests/`.
-4. Run `pytest` before committing.
-5. Run the README table generator.
+1. Follow **file naming convention**: `0001_two_sum.py`
+2. Include a **docstring with problem metadata** (title, difficulty, topics, description)
+3. Add a **test file** in `tests/`
+4. Run `tools/generate_readme_table.py` to update the README table
+5. Submit a **pull request**
 
 ---
 
 ## 🪪 License
 
-MIT License — feel free to use, share, and improve.
+MIT License — free to use, share, and improve.
 
 ---
 
-## 🚀 Goals
+## 🔗 Author
 
-* 100+ LeetCode Python solutions.
-* Automated README table generation.
-* Tested, readable, and consistent solutions.
-* Beginner-friendly structure for contributions.
-
----
-
-**Maintainer:** [@im-vishu](https://github.com/im-vishu)
-
-**Connect:** [LinkedIn](https://www.linkedin.com/in/vishant--chaudhary)
+[@im-vishu](https://github.com/im-vishu) | [LinkedIn](https://www.linkedin.com/in/vishant--chaudhary)
