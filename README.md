@@ -1,5 +1,10 @@
 # 🧠 LeetCode Python Solutions
 
+[![Python](https://img.shields.io/badge/Python-3.10+-blue)]()
+[![GitHub issues](https://img.shields.io/github/issues/im-vishu/LeetCode-Python-Solutions)]()
+[![GitHub stars](https://img.shields.io/github/stars/im-vishu/LeetCode-Python-Solutions?style=social)]()
+[![License](https://img.shields.io/badge/License-MIT-green)]()
+
 A curated collection of **Python solutions to LeetCode problems**, organized for easy navigation and learning.
 Each problem includes a **short description**, **direct problem link**, and a **solution file** for quick access.
 Perfect for practicing, revising, and mastering coding interview questions efficiently.
@@ -84,6 +89,42 @@ python solutions/0001_two_sum.py
 ```bash
 pytest -v
 ```
+
+---
+
+## 💡 Tips
+
+* Solve problems on your own **before checking the solution**.
+* Use **docstrings** in your code to summarize approach, time/space complexity.
+* Keep problems **organized by difficulty and topic**.
+* Run tests regularly using `pytest` to ensure correctness.
+
+---
+
+## 📚 Learning Resources
+
+* **Official LeetCode**: [https://leetcode.com](https://leetcode.com)
+* **NeetCode**: [https://neetcode.io](https://neetcode.io)
+* **Striver’s SDE Sheet**: [https://takeuforward.org/interviews/strivers-sde-sheet/](https://takeuforward.org/interviews/strivers-sde-sheet/)
+* **CS50 Algorithms**: [https://cs50.harvard.edu/](https://cs50.harvard.edu/)
+* **YouTube Channels**:
+
+  * [Abdul Bari](https://www.youtube.com/channel/UCZCFT11CWBi3MHNlGf019nw) — algorithms & DS deep dives.
+  * [Nick White](https://www.youtube.com/channel/UC1fLEeYICmo3O9cUsqIi7HA) — LeetCode problem explanations.
+* **Books**:
+
+  * *Cracking the Coding Interview* — classic reference for interviews.
+  * *Elements of Programming Interviews in Python* — practice problems and solutions.
+
+---
+
+## 🏆 Progress Tracker
+
+| Difficulty | Solved | Total |
+| ---------- | ------ | ----- |
+| Easy       | 5      | 50    |
+| Medium     | 5      | 50    |
+| Hard       | 2      | 25    |
 
 ---
 
