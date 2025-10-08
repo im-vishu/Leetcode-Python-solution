@@ -1,5 +1,10 @@
 # 🧠 LeetCode Python Solutions
 
+[![Python](https://img.shields.io/badge/Python-3.10+-blue)]()
+[![GitHub issues](https://img.shields.io/github/issues/im-vishu/LeetCode-Python-Solutions)]()
+[![GitHub stars](https://img.shields.io/github/stars/im-vishu/LeetCode-Python-Solutions?style=social)]()
+[![License](https://img.shields.io/badge/License-MIT-green)]()
+
 A curated collection of **Python solutions to LeetCode problems**, organized for easy navigation and learning.
 Each problem includes a **short description**, **direct problem link**, and a **solution file** for quick access.
 Perfect for practicing, revising, and mastering coding interview questions efficiently.
@@ -14,6 +19,20 @@ Perfect for practicing, revising, and mastering coding interview questions effic
 * 🧪 **Optional pytest tests** to validate solutions
 * ⚙️ **Tools to auto-generate README table** from solution files
 * 🔗 **Clickable links** for each solution for easy access
+
+---
+
+## 📈 Stats
+
+* 🟢 Total Problems Solved: 12
+* 🟡 Easy: 5 | 🟠 Medium: 5 | 🔴 Hard: 2
+* 🕒 Last Updated: 08-Oct-2025
+
+---
+
+## 🏷️ Topics Covered
+
+Array | String | Linked List | Hash Table | Two Pointers | Dynamic Programming | Graph | Binary Search
 
 ---
 
@@ -44,21 +63,32 @@ LeetCode-Python-Solutions/
 
 ---
 
-## ⚙️ How to Run a Solution
+## ⚙️ Quick Start
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/im-vishu/LeetCode-Python-Solutions.git
+cd LeetCode-Python-Solutions
+```
+
+2. **Install dependencies** (if any)
+
+```bash
+pip install -r requirements.txt
+```
+
+3. **Run a specific solution**
 
 ```bash
 python solutions/0001_two_sum.py
 ```
 
----
-
-## 🧪 Running Tests (Optional)
+4. **Run all tests** (optional)
 
 ```bash
 pytest -v
 ```
-
-Each test file should be placed in `tests/` and named `test_<problem_id>_<problem_name>.py`.
 
 ---
 
