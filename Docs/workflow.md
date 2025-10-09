@@ -1,30 +1,49 @@
 # Problem Solving Workflow
 
-This document explains the recommended approach for solving LeetCode problems efficiently.
+This document outlines a structured approach to solving LeetCode problems efficiently and learning systematically.
 
-## Steps:
+---
 
-1. **Understand the Problem**
-   - Read the problem statement carefully.
-   - Identify inputs, outputs, and constraints.
+## 1️⃣ Understand the Problem
+- Read the problem carefully, including constraints and examples.
+- Identify **inputs**, **outputs**, and **edge cases**.
+- Highlight important details such as array size limits or special cases.
+- Example: If array length <= 10^5, O(n^2) solutions might be too slow.
 
-2. **Plan Your Approach**
-   - Consider brute-force solutions first.
-   - Analyze possible optimizations (hash maps, two pointers, DP, etc.)
+**Resources:**
+- [LeetCode Problem Guide](https://leetcode.com/explore/)
+- [GeeksforGeeks Problem Understanding](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)
 
-3. **Write Code**
-   - Use a clean and readable structure.
-   - Add docstrings with problem ID, title, link, difficulty, and topics.
+---
 
-4. **Test Your Solution**
-   - Run sample test cases.
-   - Use pytest to validate correctness.
+## 2️⃣ Plan Your Approach
+- Start with a **brute-force solution** to understand the problem.
+- Identify possible optimizations (hash maps, two pointers, sliding window, recursion, DP).
+- Consider multiple approaches and select the one with optimal **time & space complexity**.
+- Draw diagrams or examples to visualize algorithms.
 
-5. **Analyze Complexity**
-   - Evaluate time and space complexity.
-   - Check if further optimization is possible.
+**Tips:**
+- Think about corner cases.
+- Write pseudocode before coding.
+- Use whiteboard or paper if needed.
 
-6. **Submit & Document**
-   - Commit solution file to the correct folder.
-   - Add tutorial or explanation if needed.
+**Resources:**
+- [NeetCode Roadmaps](https://neetcode.io/)
+- [Striver’s SDE Sheet](https://takeuforward.org/interviews/strivers-sde-sheet/)
 
+---
+
+## 3️⃣ Write Clean Code
+- Use meaningful variable names.
+- Add **docstrings** with problem ID, title, link, difficulty, topics, and description.
+- Modularize code into functions for readability.
+- Include comments for non-obvious logic.
+
+**Example Docstring:**
+```python
+"""
+LeetCode 1. Two Sum
+https://leetcode.com/problems/two-sum/
+Difficulty: Easy
+Topics: Array, Hash Map
+"""
