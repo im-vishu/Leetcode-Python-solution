@@ -1,11 +1,6 @@
 # 🧠 LeetCode Python Solutions
 
-[![Python](https://img.shields.io/badge/Python-3.10-blue)]()
-[![License](https://img.shields.io/badge/License-MIT-green)]()
-[![Stars](https://img.shields.io/github/stars/im-vishu/LeetCode-Python-Solutions)]()
-[![Forks](https://img.shields.io/github/forks/im-vishu/LeetCode-Python-Solutions)]()
-[![Issues](https://img.shields.io/github/issues/im-vishu/LeetCode-Python-Solutions)]()
-[![PRs](https://img.shields.io/github/issues-pr/im-vishu/LeetCode-Python-Solutions)]()
+
 
 A curated collection of **Python solutions to LeetCode problems**, organized by difficulty and topic for **easy navigation and learning**. Each problem includes a **brief description**, **solution file**, and **tutorials** for deeper understanding.
 
