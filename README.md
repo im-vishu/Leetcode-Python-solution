@@ -1,143 +1,135 @@
 # 🧠 LeetCode Python Solutions
 
+[![Python](https://img.shields.io/badge/Python-3.10-blue)]()
+[![License](https://img.shields.io/badge/License-MIT-green)]()
+[![Stars](https://img.shields.io/github/stars/im-vishu/LeetCode-Python-Solutions)]()
+[![Forks](https://img.shields.io/github/forks/im-vishu/LeetCode-Python-Solutions)]()
+[![Issues](https://img.shields.io/github/issues/im-vishu/LeetCode-Python-Solutions)]()
+[![PRs](https://img.shields.io/github/issues-pr/im-vishu/LeetCode-Python-Solutions)]()
 
+A curated collection of **Python solutions to LeetCode problems**, organized by difficulty and topic for **easy navigation and learning**. Each problem includes a **brief description**, **solution file**, and **tutorials** for deeper understanding.
 
-A curated collection of **Python solutions to LeetCode problems**, organized for easy navigation and learning.
-Each problem includes a **short description**, **direct problem link**, and a **solution file** for quick access.
-Perfect for practicing, revising, and mastering coding interview questions efficiently.
+---
+
+## 📌 Navigation
+
+[🧠 Workflow](./docs/workflow.md) • [📘 Resources](./docs/resources.md) • [🎯 Study Plan](./docs/study_plan.md) • [📊 Progress](./docs/progress.md) • [🧑‍💻 Contribute](./CONTRIBUTING.md) • [📜 Code of Conduct](./CODE_OF_CONDUCT.md)
 
 ---
 
 ## 🚀 Features
 
-* ✅ **Organized by Problem ID & Difficulty**
-* 📝 **Concise problem descriptions** (1–3 lines)
-* 📂 **Individual Python solution files** for clarity
-* 🧪 **Optional pytest tests** to validate solutions
-* ⚙️ **Tools to auto-generate README table** from solution files
-* 🔗 **Clickable links** for each solution for easy access
+* ✅ Organized by Problem ID & Difficulty (Easy / Medium / Hard)
+* 📂 Solutions in separate Python files with **docstrings**
+* 🧪 Optional **pytest tests** in `tests/`
+* ⚙️ Scripts in `tools/` for automation (generate README, new problem template)
+* 🔗 Tutorials and explanations for selected problems
+* 📊 Progress tracker for problems solved
 
 ---
 
-## 📈 Stats
+## 📈 Progress Tracker
 
-* 🟢 Total Problems Solved: 12
-* 🟡 Easy: 5 | 🟠 Medium: 5 | 🔴 Hard: 2
-* 🕒 Last Updated: 08-Oct-2025
-
----
-
-## 🏷️ Topics Covered
-
-Array | String | Linked List | Hash Table | Two Pointers | Dynamic Programming | Graph | Binary Search
+| Difficulty | Solved | Total | Progress |
+| ---------- | ------ | ----- | -------- |
+| Easy       | 5      | 50    | 🟩🟩🟩⬜⬜ |
+| Medium     | 5      | 50    | 🟩🟩⬜⬜⬜  |
+| Hard       | 2      | 25    | 🟩⬜⬜⬜⬜   |
 
 ---
 
-## 📊 Problem Table
+## 📚 Learning Resources
 
-| # | Problem                                                                                                                         | Description                                                            | Solution                                                                            |
-| - | ------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/)                                                                               | Find two numbers in an array that sum to a target.                     | [View Solution](./solutions/0001_two_sum.py)                                        |
-| 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)                                                               | Add two numbers represented as linked lists and return the sum.        | [View Solution](./solutions/0002_add_two_numbers.py)                                |
-| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Find the length of the longest substring with no repeating characters. | [View Solution](./solutions/0003_longest_substring_without_repeating_characters.py) |
-
-<!-- TABLE_START -->
-
-<!-- TABLE_END -->
+* [LeetCode](https://leetcode.com) — official platform
+* [NeetCode.io](https://neetcode.io/) — curated solutions
+* [Striver’s SDE Sheet](https://takeuforward.org/interviews/strivers-sde-sheet/)
+* [Abdul Bari YouTube](https://www.youtube.com/@abdul_bari) — DS & Algo tutorials
+* [CS50 Algorithms](https://cs50.harvard.edu/) — fundamental algorithms
+* [GeeksforGeeks](https://practice.geeksforgeeks.org/) — problem explanations
+* Books: *Cracking the Coding Interview*, *Elements of Programming Interviews in Python*
 
 ---
 
-## 📁 Folder Structure
+## 🎯 Study Plan
+
+| Week | Focus                     | Problems          |
+| ---- | ------------------------- | ----------------- |
+| 1    | Arrays & Strings          | 10 Easy, 5 Medium |
+| 2    | Linked List, Stack, Queue | 10 Easy, 5 Medium |
+| 3    | Trees & Recursion         | 10 Medium         |
+| 4    | DP & Graphs               | 5 Medium, 3 Hard  |
+
+---
+
+## 🧩 Problem Table
+
+<!--TABLE_START-->
+
+<!--TABLE_END-->
+
+*Use `tools/generate_readme_table.py` to auto-populate this table.*
+
+---
+
+## 🏗️ Folder Structure
 
 ```
 LeetCode-Python-Solutions/
 ├── README.md
-├── solutions/    # Individual Python solution files
-├── tests/        # Optional pytest files
-├── tools/        # Helper scripts (e.g., auto-generate README table)
-└── requirements.txt
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── requirements.txt
+├── solutions/
+│   ├── easy/
+│   ├── medium/
+│   ├── hard/
+│   └── topics/
+├── tests/
+├── docs/
+│   ├── workflow.md
+│   ├── resources.md
+│   ├── study_plan.md
+│   ├── progress.md
+│   └── tutorials/
+├── tools/
+│   ├── generate_readme_table.py
+│   └── new_problem_template.py
+├── .github/workflows/python-test.yml
+└── assets/diagrams/
 ```
 
 ---
 
 ## ⚙️ Quick Start
 
-1. **Clone the repository**
-
 ```bash
+# Clone the repo
 git clone https://github.com/im-vishu/LeetCode-Python-Solutions.git
 cd LeetCode-Python-Solutions
-```
 
-2. **Install dependencies** (if any)
-
-```bash
+# Install dependencies
 pip install -r requirements.txt
-```
 
-3. **Run a specific solution**
+# Run a specific solution
+python solutions/easy/0001_two_sum.py
 
-```bash
-python solutions/0001_two_sum.py
-```
-
-4. **Run all tests** (optional)
-
-```bash
+# Run all tests
 pytest -v
 ```
 
 ---
 
-## 💡 Tips
-
-* Solve problems on your own **before checking the solution**.
-* Use **docstrings** in your code to summarize approach, time/space complexity.
-* Keep problems **organized by difficulty and topic**.
-* Run tests regularly using `pytest` to ensure correctness.
-
----
-
-## 📚 Learning Resources
-
-* **Official LeetCode**: [https://leetcode.com](https://leetcode.com)
-* **NeetCode**: [https://neetcode.io](https://neetcode.io)
-* **Striver’s SDE Sheet**: [https://takeuforward.org/interviews/strivers-sde-sheet/](https://takeuforward.org/interviews/strivers-sde-sheet/)
-* **CS50 Algorithms**: [https://cs50.harvard.edu/](https://cs50.harvard.edu/)
-* **YouTube Channels**:
-
-  * [Abdul Bari](https://www.youtube.com/channel/UCZCFT11CWBi3MHNlGf019nw) — algorithms & DS deep dives.
-  * [Nick White](https://www.youtube.com/channel/UC1fLEeYICmo3O9cUsqIi7HA) — LeetCode problem explanations.
-* **Books**:
-
-  * *Cracking the Coding Interview* — classic reference for interviews.
-  * *Elements of Programming Interviews in Python* — practice problems and solutions.
-
----
-
-## 🏆 Progress Tracker
-
-| Difficulty | Solved | Total |
-| ---------- | ------ | ----- |
-| Easy       | 5      | 50    |
-| Medium     | 5      | 50    |
-| Hard       | 2      | 25    |
-
----
-
 ## 📝 Contributing
 
-1. Follow **file naming convention**: `0001_two_sum.py`
-2. Include a **docstring with problem metadata** (title, difficulty, topics, description)
-3. Add a **test file** in `tests/`
-4. Run `tools/generate_readme_table.py` to update the README table
-5. Submit a **pull request**
+Please read [CONTRIBUTING.md](./CONTRIBUTING.md) and follow the [Code of Conduct](./CODE_OF_CONDUCT.md).
 
 ---
 
-## 🪪 License
+## 🌟 Acknowledgments
 
-MIT License — free to use, share, and improve.
+* Inspired by NeetCode, Striver’s SDE Sheet, and GeeksforGeeks
+* Community contributions from GitHub users
 
 ---
 
